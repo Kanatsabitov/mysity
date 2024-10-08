@@ -1,0 +1,542 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #005f73;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0a9396;
+}
+
+.hero-section {
+    background-image: url('city-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 24px;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+#news {
+    margin: 50px;
+    padding: 100px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    position: relative;
+    width: ;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-item {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.news-img {
+    width: 1300px;
+    height: 600px;
+    border-radius: 8px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.news-item:hover .overlay {
+    opacity: 1;
+}
+
+
+.overlay h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Панель скрыта */
+    background-color: #0073e6;
+    padding: 20px;
+    color: white;
+    transition: 0.3s;
+    z-index: 100; /* Меню стрелкалардың үстінде тұрады */
+}
+
+.sidebar.open {
+    left: 0; /* Показываем панель */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #434445;
+}
+
+.content {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Кнопка открытия меню */
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #242526;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: fixed;
+    top: 15px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.open-btn:hover {
+    background-color: #242526;
+}
+
+/* Кнопка закрытия меню */
+.close-btn {
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* Контейнер галереи */
+.gallery-container {
+    position: relative;
+    width: 100%; /* Ширина галереи */
+    max-width: 1500px; /* Максимальная ширина news секциясы сияқты */
+    margin: 50px auto; /* Центрируем */
+    padding: 50px;
+    overflow: hidden;
+    border: 2px solid #e7e9eb; /* Обводка */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+/* Изображения и подпись */
+.gallery-slide {
+    position: relative;
+    display: none; /* Скрываем все слайды, кроме активного */
+}
+
+.gallery-slide.active {
+    display: block; /* Показываем активный слайд */
+}
+
+.gallery-image {
+    width: 1400px;
+    height: 600px; /* Биіктікті news секциясы сияқты */
+    object-fit: cover; /* Изображение масштабируется */
+}
+
+/* Подпись под фото */
+.gallery-caption {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #f4f4f4;
+}
+
+.gallery-prev, .gallery-next, .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10; /* Төмен мән, менюдің артында тұрады */
+    font-size: 10px;
+}
+
+.gallery-prev:hover, .gallery-next:hover, .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.gallery-prev {
+    left: 10px;
+}
+
+.gallery-next {
+    right: 10px;
+}
+
+.history-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Сурет пен мәтіннің арасындағы қашықтық */
+    margin-bottom: 20px; /* Әр контейнердің арасындағы қашықтық */
+}
+
+.history-image {
+    width: 300px; /* Суреттің ені */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Сурет пен келесі элементтің арасындағы қашықтық */
+}
+.attraction-image {
+    display: block;
+    max-width: 100%; /* Контейнердің еніне сай максималды ені */
+    height: auto; /* Биіктігін автоматты түрде сақтау */
+    display: block; /* Блок элемент ретінде көрсету */
+    margin: 0 auto; /* Ортасына келтіру */
+    position: relative;
+}
+
+.attraction-caption {
+    position: absolute; /* Абсолютті позиция */
+    bottom: 10px; /* Төменгі шеттен 10 пиксель */
+    left: 50%; /* Ортасына */
+    transform: translateX(-50%); /* Ортасына келтіру */
+    color: white; /* Мәтін түсі */
+    background-color: rgba(0, 0, 0, 0.5); /* Фон түсі */
+    padding: 5px 10px; /* Жазудың айналасындағы орын */
+    border-radius: 4px; /* Бұрыштарын дөңгелектеу */
+}
+
+.overlay-text {
+    position: absolute; /* Абсолютті позиция */
+    bottom: 10px; /* Төменгі шеттен 10 пиксель */
+    left: 10px; /* Сол жақ шеттен 10 пиксель */
+    color: white; /* Мәтін түсі */
+    font-size: 24px; /* Шрифт өлшемі */
+    background-color: rgba(0, 0, 0, 0.5); /* Фон түсі */
+    padding: 5px; /* Жазудың айналасындағы орын */
+    border-radius: 4px; /* Бұрыштарын дөңгелектеу */
+}
+
+.arrow-right {
+    position: absolute; /* Абсолютті позиция */
+    top: 50%; /* Жоғарыдан ортаға */
+    right: 10px; /* Оң жақ шеттен 10 пиксель */
+    font-size: 24px; /* Шрифт өлшемі */
+    color: white; /* Мәтін түсі */
+    transform: translateY(-50%); /* Ортасына келтіру */
+    cursor: pointer; /* Көрсеткіш курсор */
+}
+
+.bottom-left-caption {
+    position: absolute; /* Абсолютті позиция */
+    bottom: 10px; /* Төменгі шеттен 10 пиксель */
+    left: 10px; /* Сол жақ шеттен 10 пиксель */
+    color: white; /* Мәтін түсі */
+    background-color: rgba(0, 0, 0, 0.5); /* Фон түсі */
+    padding: 5px; /* Жазудың айналасындағы орын */
+    border-radius: 4px; /* Бұрыштарын дөңгелектеу */
+    font-size: 50px;
+}
+.sealink {
+    text-decoration: none; /* Сілтеменің асты сызылмауын алып тастау */
+    color: inherit; /* Мәтін түсін мұрагерлікке беру (сілтеме мәтіні өзгере бермейді) */
+}
+.sealink:hover{
+    text-decoration: underline;
+}
+.photo-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Орын */
+}
+
+.photo-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.review-item {
+    display: flex;
+    align-items: flex-start; /* Сурет пен мәтінді жоғарғы жаққа туралау */
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.review-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    object-fit: cover;
+    align-self: flex-start; /* Суретті жоғарғы бұрышқа қою */
+}
+
+.review-text {
+    text-align: left;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.review-text p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-text p:last-child {
+    font-style: italic;
+    color: #777;
+}
+#city-map {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+}
+
+#city-map h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#city-map p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-link-block {
+    background-color: #2196F3; /* Көк түс блок үшін */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.map-link-block a {
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.map-link-block a:hover {
+    text-decoration: underline;
+}
+/* Для устройств с шириной экрана до 768px (смартфоны) */
+@media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
